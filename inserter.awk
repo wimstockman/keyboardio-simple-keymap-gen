@@ -1,6 +1,6 @@
 BEGIN   {
         nf=0;            
-        cmd = "awk -f keyboardio-mapper.awk keyboardiolayout.csv";
+        cmd = "awk -f keyboardio-mapper.awk keymapper.csv";
         while ((cmd |& getline line) > 0) {
               nf=nf+1;      
               temp[nf]=line;

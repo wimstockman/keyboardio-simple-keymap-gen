@@ -131,7 +131,7 @@ for (k = 1; k <= nlayer; ++k) {
         right=right OFS righthalf[name][i];
         }    
     print "["name"] = KEYMAP_STACKED"
-    if (k < nlayer) print "("left right"),";
+    if (k < nlayer) print "("left OFS right"),";
     else print "("left OFS right")";
     }
 print "};"
